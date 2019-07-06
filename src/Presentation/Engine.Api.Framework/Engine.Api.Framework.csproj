@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BundlerMinifier.Core" Version="2.9.406" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.4.0" />
+    <PackageReference Include="WebMarkupMin.AspNetCore2" Version="2.5.0" />
+    <PackageReference Include="WebMarkupMin.NUglify" Version="2.5.5" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\Engine.Core\Engine.Core.csproj" />
+    <ProjectReference Include="..\..\Libraries\Engine.Data\Engine.Data.csproj" />
+    <ProjectReference Include="..\..\Libraries\Engine.Services\Engine.Services.csproj" />
+  </ItemGroup>
+
+</Project>
