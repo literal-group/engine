@@ -1,0 +1,11 @@
+language: csharp
+mono: none
+dotnet: 2.2.101
+dist: xenial
+install:
+- dotnet restore ./src/Engine.sln
+script:
+- dotnet build ./src/Engine.sln
+- dotnet test ./src/Tests/Engine.Core.Tests/Engine.Core.Tests.csproj
+- dotnet test ./src/Tests/Engine.Api.Tests/Engine.Api.Tests.csproj
+- dotnet test ./src/Tests/Engine.Services.Tests/Engine.Services.Tests.csproj
